@@ -1,4 +1,24 @@
 # Assignment On Java
+## To run the project:
+### Prerequisites:
+1. Ensure Git is installed on your PC. If not, download and install it from https://git-scm.com/downloads
+2. Ensure you have Java installed to run the project. If not, download and install the JDK from
+3. Install IntelliJ IDEA from https://www.jetbrains.com/idea/download/?section=windows
+## Steps to Download and Run the Project
+
+1. **Open IntelliJ IDEA**
+2. **Clone the Repository**:
+   * File -> New -> Project from Version Control -> Git.
+   * Enter URL: `https://github.com/Tama-Shil/AssignmentOnJava.git`.
+   * Choose directory and Clone.
+3. **Open the Project if not automatically opened**
+4. **Configure Project SDK if needed**:
+   * File -> Project Structure -> Project.
+   * Set Project SDK.
+5. **Run the java files from src folder**
+
+ 
+
 ## List of tasks:
 **1.** Here is the 10 students CGPA [3.50, 3.52, 3.43, 3.63, 3.48, 3.32, 3.30, 3.60, 3.86, 3.75]
      Find out who achieved the 2nd highest score. (without sorting, use linear searching algorithm)
