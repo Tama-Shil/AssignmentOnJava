@@ -2,7 +2,7 @@ import java.util.LinkedHashMap;
 import java.util.Map;
 import java.util.Scanner;
 
-public class Task_8_10_Stringtasks {
+public class Task_8_9_Stringtasks {
     public static void main(String[] args) {
         try{
             Scanner input = new Scanner(System.in);
@@ -59,7 +59,7 @@ public class Task_8_10_Stringtasks {
 
             string=input.nextLine();
             string=string.toLowerCase();
-            Map<Character, Integer> map = new LinkedHashMap<Character, Integer>();
+            Map<Character, Integer> map = new LinkedHashMap<>();
 
             for(char ch: string.toCharArray()){
                 if(Character.isLetter(ch)){
@@ -71,28 +71,6 @@ public class Task_8_10_Stringtasks {
                 System.out.println(entry.getKey()+" "+entry.getValue());
             }
 
-            /*
-             * Qustion 10:
-             *  A core i 7 laptop price is 85000 tk and a gaming mouse price is 2500 tk. If I buy the laptop and 1 piece mouse, what will be my total cost after giving 15% discount? [Extract the digits from the paragraph and calculate the price]
-             */
-            System.out.println("\nThe answer of Question 10:");
-
-            String str="A core i 7 laptop price is 85000 tk and a gaming mouse price is 2500 tk. If I buy the laptop and 1 piece mouse, what will be my total cost after giving 15% discount?";
-            str = str.replaceAll("[^\\d]", " ");
-            str = str.trim();
-            str = str.replaceAll(" +", " ");
-
-            String[] arr = str.split(" ");
-           
-
-            double laptop_price = Double.parseDouble(arr[1]);
-            double mouse_price = Double.parseDouble(arr[2]);
-
-            double total=laptop_price+mouse_price;
-            double discount = 0.15;
-            double finalPrice = total * (1 - discount);
-
-            System.out.println("Total price "+finalPrice);
 
         }catch(Exception e){
         System.out.println(e);}
